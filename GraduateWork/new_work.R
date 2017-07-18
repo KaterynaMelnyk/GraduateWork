@@ -21,6 +21,7 @@ for (i in 2:(dim(data_initial)[2]))
   {
     str_names_not_norm<-c(str_names_not_norm, names(data_initial)[i])
   }
+
   if (shapiro.test(a1)$p.value>0.8 & shapiro.test(a2)$p.value<0.8 & shapiro.test(a3)$p.value<0.8)
   {
     str_names_norm<-c(str_names_norm, names(data_initial)[i])
@@ -960,3 +961,6 @@ write.csv(data_general_SA_control_and_CA_control, "General_genes_SA_control_and_
 
 
 
+
+#FINISHED!!!
+#FINISHED!!!
